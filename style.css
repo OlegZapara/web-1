@@ -16,6 +16,10 @@ body {
   background-color: var(--bg-color);
 }
 
+section {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .gradient {
   background: #7f7fd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -97,7 +101,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--corner-radius);
   color: var(--accent-color);
-  max-width: 600px;
+  max-width: 800px;
   padding: 0 2rem;
   height: 75%;
   display: flex;
@@ -116,6 +120,7 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem;
+  position: relative;
 }
 
 .lower-item {
@@ -207,4 +212,34 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: var(--corner-radius);
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.menu > ul {
+  padding: 10px 30px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--corner-radius);
+  width: 75%;
+}
+
+.menu > ul > li > a {
+  color: white !important;
+  text-decoration: none !important;
 }
